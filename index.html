@@ -35,6 +35,39 @@
       z-index: 0;
     }
 
+    /* Background tile mahjong penuh */
+    .mahjong-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      z-index: 0;
+      overflow: hidden;
+      opacity: 0.35;
+    }
+
+    .reel {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      animation: scrollDown 10s linear infinite; /* semua reel kecepatan sama */
+    }
+
+    .tile {
+      font-size: 64px;
+      text-align: center;
+      color: #ffd700;
+      text-shadow: 0 0 10px #00ff00, 0 0 20px #ffd700, 0 0 30px #00ff00;
+      padding: 30px 0;
+    }
+
+    @keyframes scrollDown {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(100%); }
+    }
+
     header, section, footer {
       position: relative;
       z-index: 1;
@@ -45,7 +78,6 @@
       padding: 60px 20px 30px;
     }
 
-    /* Efek teks bergaya api */
     .fire-text {
       font-size: 64px;
       font-weight: bold;
@@ -83,7 +115,6 @@
       text-shadow: 0 0 10px #0ff;
     }
 
-    /* Tombol neon bergaya game */
     .btn-game {
       display: inline-block;
       padding: 14px 32px;
@@ -118,6 +149,22 @@
 <body>
   <!-- Canvas untuk background api penuh -->
   <canvas id="fireCanvas"></canvas>
+
+  <!-- Background tile mahjong -->
+  <div class="mahjong-background">
+    <div class="reel">
+      <div class="tile">🀄</div><div class="tile">🀇</div><div class="tile">🀈</div><div class="tile">🀉</div><div class="tile">🀊</div>
+      <div class="tile">🀄</div><div class="tile">🀇</div><div class="tile">🀈</div><div class="tile">🀉</div><div class="tile">🀊</div>
+    </div>
+    <div class="reel">
+      <div class="tile">🀈</div><div class="tile">🀉</div><div class="tile">🀊</div><div class="tile">🀄</div><div class="tile">🀇</div>
+      <div class="tile">🀈</div><div class="tile">🀉</div><div class="tile">🀊</div><div class="tile">🀄</div><div class="tile">🀇</div>
+    </div>
+    <div class="reel">
+      <div class="tile">🀇</div><div class="tile">🀊</div><div class="tile">🀄</div><div class="tile">🀈</div><div class="tile">🀉</div>
+      <div class="tile">🀇</div><div class="tile">🀊</div><div class="tile">🀄</div><div class="tile">🀈</div><div class="tile">🀉</div>
+    </div>
+  </div>
 
   <header>
     <h1 class="fire-text">BATIKJITU</h1>
@@ -169,32 +216,4 @@
       for (let i = 0; i < particles.length; i++) {
         particles[i].update();
         particles[i].draw();
-        if (particles[i].size <= 0.3) {
-          particles.splice(i, 1);
-          i--;
-        }
-      }
-    }
-
-    function animate() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      handleParticles();
-      requestAnimationFrame(animate);
-    }
-
-    function createParticles() {
-      const x = Math.random() * canvas.width;
-      const y = canvas.height;
-      particles.push(new Particle(x, y));
-    }
-
-    setInterval(createParticles, 50); // lebih rapat untuk background penuh
-    animate();
-
-    window.addEventListener('resize', () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    });
-  </script>
-</body>
-</html>
+        if
