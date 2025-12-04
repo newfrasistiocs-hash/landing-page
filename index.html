@@ -25,7 +25,6 @@
       background: #000;
     }
 
-    /* Canvas background penuh */
     #fireCanvas {
       position: fixed;
       top: 0;
@@ -35,7 +34,6 @@
       z-index: 0;
     }
 
-    /* Background tile mahjong penuh */
     .mahjong-background {
       position: fixed;
       top: 0;
@@ -100,7 +98,7 @@
     header p {
       font-size: 20px;
       font-style: italic;
-      color: #ccc;
+      color: #f2f2f2;
       margin-top: 10px;
     }
 
@@ -115,7 +113,6 @@
       text-shadow: 0 0 10px #0ff;
     }
 
-    /* Tombol standar bold */
     .btn-game {
       display: inline-block;
       padding: 14px 32px;
@@ -136,6 +133,16 @@
       box-shadow: 0 0 20px #0ff;
     }
 
+    .typing-text {
+      margin-top: 40px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffeb3b;
+      text-align: center;
+      text-shadow: 0 0 5px #ff5722, 0 0 10px #ff7043;
+      white-space: pre-wrap; /* agar teks panjang tetap rapi */
+    }
+
     footer {
       background: rgba(17,17,17,0.6);
       color: #fff;
@@ -147,10 +154,8 @@
   </style>
 </head>
 <body>
-  <!-- Canvas untuk background api penuh -->
   <canvas id="fireCanvas"></canvas>
 
-  <!-- Background tile mahjong -->
   <div class="mahjong-background">
     <div class="reel">
       <div class="tile">🀄</div><div class="tile">🀇</div><div class="tile">🀈</div><div class="tile">🀉</div><div class="tile">🀊</div>
@@ -175,53 +180,28 @@
     <h2>Klik link dibawah ini</h2>
     <a href="https://batiklaris.space/daftar?ref_id=2d452d72" class="btn-game">DAFTAR</a>
     <a href="https://batiklaris.space/daftar?ref_id=2d452d72" class="btn-game">LOGIN</a>
-  </section>
 
+    <!-- Pesan promosi dengan efek typing -->
+    <p class="typing-text"></p>
+  </section>
   <footer>
     <p>&copy; SALAM HOKI BATIKJITU</p>
   </footer>
 
   <script>
-    // Background animasi partikel api penuh
-    const canvas = document.getElementById('fireCanvas');
-    const ctx = canvas.getContext('2d');
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    // Efek typing untuk pesan promosi
+    const promoMessage = "BATIKJITU telah menjadi salah satu tempat alternatif untuk bermain game online dengan tampilan yang sangat menarik dan seru, cobain sekarang juga dan raihkan semua kesempatan dalam permainan game online yang memiliki keseruan bermain.";
+    let i = 0;
 
-    let particles = [];
-
-    class Particle {
-      constructor(x, y) {
-        this.x = x;
-        this.y = y;
-        this.size = Math.random() * 5 + 2;
-        this.speedY = Math.random() * -2 - 1;
-        this.speedX = (Math.random() - 0.5) * 1;
-        this.color = 'rgba(255,' + Math.floor(Math.random()*150) + ',0,0.8)';
-      }
-      update() {
-        this.y += this.speedY;
-        this.x += this.speedX;
-        if (this.size > 0.2) this.size -= 0.05;
-      }
-      draw() {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fillStyle = this.color;
-        ctx.fill();
+    function typeWriter() {
+      if (i < promoMessage.length) {
+        document.querySelector(".typing-text").innerHTML += promoMessage.charAt(i);
+        i++;
+        setTimeout(typeWriter, 50); // kecepatan ketik (ms per karakter)
       }
     }
 
-    function handleParticles() {
-      for (let i = 0; i < particles.length; i++) {
-        particles[i].update();
-        particles[i].draw();
-        if (particles[i].size <= 0.3) {
-          particles.splice(i, 1);
-          i--;
-        }
-      }
-    }
-
-    function animate() {
-      ctx.clearRect(0, 0
+    window.onload = typeWriter;
+  </script>
+</body>
+</html>
