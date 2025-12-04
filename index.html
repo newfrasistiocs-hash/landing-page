@@ -52,7 +52,7 @@
       flex: 1;
       display: flex;
       flex-direction: column;
-      animation: scrollDown 10s linear infinite; /* semua reel kecepatan sama */
+      animation: scrollDown 10s linear infinite;
     }
 
     .tile {
@@ -115,24 +115,24 @@
       text-shadow: 0 0 10px #0ff;
     }
 
+    /* Tombol standar bold */
     .btn-game {
       display: inline-block;
       padding: 14px 32px;
       margin: 15px;
       background: #000;
       color: #0ff;
-      font-family: 'Press Start 2P', cursive, Arial;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
       text-decoration: none;
       border: 2px solid #0ff;
       border-radius: 8px;
-      text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
       transition: all 0.3s ease;
     }
 
     .btn-game:hover {
       background: #0ff;
       color: #000;
-      text-shadow: none;
       box-shadow: 0 0 20px #0ff;
     }
 
@@ -216,4 +216,12 @@
       for (let i = 0; i < particles.length; i++) {
         particles[i].update();
         particles[i].draw();
-        if
+        if (particles[i].size <= 0.3) {
+          particles.splice(i, 1);
+          i--;
+        }
+      }
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0
