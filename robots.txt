@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://landing-page-nine-phi-38.vercel.app/sitemap.xml
