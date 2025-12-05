@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://www.batiklaris.my.id/sitemap.xml
+Sitemap: https://batiklaris.my.id/sitemap.xml
