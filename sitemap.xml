@@ -33,4 +33,20 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Artikel Blog 1 -->
+  <url>
+    <loc>https://www.batiklaris.my.id/blog/artikel1.html</loc>
+    <lastmod>2025-12-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Artikel Blog 2 -->
+  <url>
+    <loc>https://www.batiklaris.my.id/blog/artikel2.html</loc>
+    <lastmod>2025-12-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
