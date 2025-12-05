@@ -31,26 +31,26 @@
     #fireCanvas {position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;}
     .mahjong-background {position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: flex; z-index: 0; overflow: hidden; opacity: 0.35;}
     .reel {flex: 1; display: flex; flex-direction: column; animation: scrollDown 10s linear infinite;}
-    .tile {font-size: 64px; text-align: center; color: #ffd700; text-shadow: 0 0 10px #00ff00, 0 0 20px #ffd700, 0 0 30px #00ff00; padding: 30px 0;}
+    .tile {font-size: 64px; text-align: center; color: #ffd700; text-shadow: 0 0 10px #00ff00, 0 0 20px #ffd700, 0 0 30px #00ff00; padding: 20px 0;}
     @keyframes scrollDown {0% { transform: translateY(-100%);} 100% { transform: translateY(100%);}}
     header, section, footer {position: relative; z-index: 1; text-align: center;}
-    header {padding: 60px 20px 30px;}
-    .fire-text {font-size: 64px; font-weight: bold; text-transform: uppercase; color: #ffeb3b; animation: flicker 1s infinite alternate; text-shadow:0 0 5px #ff5722,0 0 10px #ff7043,0 0 20px #ff9800,0 0 40px #ff5722;}
+    header {padding: 30px 15px;} /* lebih rapat */
+    .fire-text {font-size: 48px; font-weight: bold; text-transform: uppercase; color: #ffeb3b; animation: flicker 1s infinite alternate; text-shadow:0 0 5px #ff5722,0 0 10px #ff7043,0 0 20px #ff9800,0 0 40px #ff5722;}
     @keyframes flicker {0% { text-shadow: 0 0 5px #ff5722, 0 0 10px #ff7043;} 50% { text-shadow: 0 0 15px #ff9800, 0 0 30px #ff5722;} 100% { text-shadow: 0 0 10px #ff7043, 0 0 20px #ff9800;}}
-    header p {font-size: 20px; font-style: italic; color: #f2f2f2; margin-top: 10px;}
-    section {padding: 80px 20px;}
-    section h2 {font-size: 28px; margin-bottom: 30px; color: #0ff; text-shadow: 0 0 10px #0ff;}
-    .btn-game {display: inline-block; padding: 14px 32px; margin: 15px; background: #000; color: #0ff; font-weight: bold; text-decoration: none; border: 2px solid #0ff; border-radius: 8px; transition: all 0.3s ease;}
+    header p {font-size: 18px; font-style: italic; color: #f2f2f2; margin-top: 5px;}
+    section {padding: 40px 15px;} /* lebih rapat */
+    section h2 {font-size: 24px; margin-bottom: 15px; color: #0ff; text-shadow: 0 0 10px #0ff;}
+    section p {font-size: 16px; line-height: 1.4; margin: 10px 0;} /* teks lebih rapat */
+    .btn-game {display: inline-block; padding: 12px 28px; margin: 10px; background: #000; color: #0ff; font-weight: bold; text-decoration: none; border: 2px solid #0ff; border-radius: 8px; transition: all 0.3s ease;}
     .btn-game:hover {background: #0ff; color: #000; box-shadow: 0 0 20px #0ff;}
-    .typing-text {margin-top: 40px; font-size: 20px; font-weight: bold; color: #ffeb3b; text-align: center; text-shadow: 0 0 5px #ff5722, 0 0 10px #ff7043; white-space: pre-wrap;}
-    footer {background: rgba(17,17,17,0.6); color: #fff; text-align: center; padding: 20px; font-size: 14px; letter-spacing: 1px;}
+    .typing-text {margin-top: 20px; font-size: 18px; font-weight: bold; color: #ffeb3b; text-align: center; text-shadow: 0 0 5px #ff5722, 0 0 10px #ff7043; white-space: pre-wrap;}
+    footer {background: rgba(17,17,17,0.6); color: #fff; text-align: center; padding: 10px; font-size: 12px; letter-spacing: 1px;}
   </style>
 </head>
 <body>
   <canvas id="fireCanvas"></canvas>
 
   <div class="mahjong-background">
-    <!-- background reels -->
     <div class="reel"><div class="tile">🀄</div><div class="tile">🀇</div><div class="tile">🀈</div><div class="tile">🀉</div><div class="tile">🀊</div></div>
     <div class="reel"><div class="tile">🀈</div><div class="tile">🀉</div><div class="tile">🀊</div><div class="tile">🀄</div><div class="tile">🀇</div></div>
     <div class="reel"><div class="tile">🀇</div><div class="tile">🀊</div><div class="tile">🀄</div><div class="tile">🀈</div><div class="tile">🀉</div></div>
