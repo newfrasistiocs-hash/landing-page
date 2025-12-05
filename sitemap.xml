@@ -6,5 +6,10 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-  <!-- Tambahkan URL lain di bawah ini -->
+  <url>
+    <loc>https://www.batiklaris.my.id/login</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
