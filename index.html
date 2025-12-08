@@ -77,10 +77,10 @@
       justify-content: center;
       align-items: center;
       margin-top: 150px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
     .banner-wrapper img {
-      max-width: 80%;
+      max-width: 60%;
       height: auto;
       display: block;
       border-radius: 8px;
@@ -88,11 +88,11 @@
       animation: fadeIn 1.5s ease forwards;
     }
 
-    /* Tombol aksi di bawah banner */
+    /* Tombol aksi vertikal di bawah banner */
     .action-buttons {
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
       gap: 15px;
       margin-bottom: 50px;
     }
@@ -105,9 +105,10 @@
       font-weight: bold;
       text-decoration: none;
       transition: all 0.3s ease;
+      width: 80%;
+      text-align: center;
       opacity: 0;
-      animation: fadeIn 2s ease forwards;
-      animation-delay: 0.5s; /* tombol muncul setelah banner */
+      animation: fadeIn 1s ease forwards;
     }
     .action-buttons a:hover {
       background-color: #0ff;
@@ -120,6 +121,12 @@
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
+    /* Delay berbeda untuk tiap tombol */
+    .action-buttons a:nth-child(1) { animation-delay: 0.5s; }
+    .action-buttons a:nth-child(2) { animation-delay: 1s; }
+    .action-buttons a:nth-child(3) { animation-delay: 1.5s; }
+    .action-buttons a:nth-child(4) { animation-delay: 2s; }
 
     /* Footer */
     footer {
@@ -138,6 +145,16 @@
     footer nav a:hover {
       text-decoration: underline;
       color: #ffeb3b;
+    }
+
+    /* Responsif untuk mobile */
+    @media (max-width: 768px) {
+      .banner-wrapper img {
+        max-width: 90%;
+      }
+      .action-buttons a {
+        width: 95%;
+      }
     }
   </style>
 </head>
@@ -163,7 +180,7 @@
     <img src="assets/banner-batik.png" alt="Banner BATIKJITU">
   </div>
 
-  <!-- Tombol aksi di bawah banner -->
+  <!-- Tombol aksi vertikal di bawah banner -->
   <div class="action-buttons">
     <a href="https://batiklaris.space/daftar?ref_id=2d452d72">LINK DAFTAR BATIKJITU</a>
     <a href="https://batiklaris.space/login">LINK LOGIN BATIKJITU</a>
