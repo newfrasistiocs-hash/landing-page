@@ -57,7 +57,7 @@
       box-shadow: 0 0 10px #0ff;
     }
 
-    /* Header deskripsi di tengah atas */
+    /* Header deskripsi di tengah atas dengan efek profesional */
     .header-center {
       position: absolute;
       top: 70px;
@@ -74,9 +74,9 @@
       letter-spacing: 2px;
       color: #ffeb3b;
       margin: 0;
-      text-shadow: 
-        0 0 5px #000, 
-        0 0 10px #ff5722, 
+      text-shadow:
+        0 0 5px #000,
+        0 0 10px #ff5722,
         0 0 20px #ff7043;
       animation: fadeGlow 2s ease-in-out infinite alternate;
     }
@@ -86,7 +86,7 @@
       to   { text-shadow: 0 0 15px #ff7043, 0 0 30px #ff9800; }
     }
 
-    /* Banner di tengah halaman */
+    /* Banner di tengah halaman (ukuran asli file) */
     .banner-wrapper {
       display: flex;
       justify-content: center;
@@ -95,7 +95,8 @@
       margin-bottom: 20px;
     }
     .banner-wrapper img {
-      max-width: 60%;
+      width: auto;        /* ikuti ukuran asli file */
+      max-width: 100%;    /* jangan melebihi layar */
       height: auto;
       display: block;
       border-radius: 8px;
@@ -178,7 +179,7 @@
     /* Responsif untuk mobile */
     @media (max-width: 768px) {
       .banner-wrapper img {
-        max-width: 90%;
+        max-width: 100%;
       }
       .action-buttons a {
         width: 95%;
@@ -194,7 +195,7 @@
   </style>
 </head>
 <body>
-  <!-- Logo kiri atas bisa diklik -->
+    <!-- Logo kiri atas bisa diklik -->
   <div class="header-top">
     <a href="https://batiklaris.space/daftar?ref_id=2d452d72">
       <img src="assets/logo-batikjitu.png" alt="Logo BATIKJITU" class="logo">
@@ -238,4 +239,12 @@
   <footer>
     <p>&copy; 2025 SALAM HOKI BATIKJITU</p>
     <nav>
-      <a href="https://www.batik
+      <a href="https://www.batiklaris.my.id/">Beranda</a> |
+      <a href="https://www.batiklaris.my.id/tentang.html">Tentang Kami</a> |
+      <a href="https://www.batiklaris.my.id/faq.html">FAQ</a> |
+      <a href="https://www.batiklaris.my.id/kontak.html">Kontak</a> |
+      <a href="https://www.batiklaris.my.id/sitemap.html">Sitemap</a>
+    </nav>
+  </footer>
+</body>
+</html>
