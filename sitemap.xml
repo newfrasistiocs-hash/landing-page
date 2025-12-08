@@ -4,7 +4,7 @@
   <!-- Halaman utama -->
   <url>
     <loc>https://www.batiklaris.my.id/</loc>
-    <lastmod>2025-12-06</lastmod>
+    <lastmod>2025-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- Halaman Tentang -->
   <url>
     <loc>https://www.batiklaris.my.id/tentang.html</loc>
-    <lastmod>2025-12-06</lastmod>
+    <lastmod>2025-12-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -20,7 +20,7 @@
   <!-- Halaman FAQ -->
   <url>
     <loc>https://www.batiklaris.my.id/faq.html</loc>
-    <lastmod>2025-12-06</lastmod>
+    <lastmod>2025-12-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -28,7 +28,7 @@
   <!-- Halaman Kontak -->
   <url>
     <loc>https://www.batiklaris.my.id/kontak.html</loc>
-    <lastmod>2025-12-06</lastmod>
+    <lastmod>2025-12-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -36,7 +36,7 @@
   <!-- Artikel Blog 1 -->
   <url>
     <loc>https://www.batiklaris.my.id/blog/artikel1.html</loc>
-    <lastmod>2025-12-06</lastmod>
+    <lastmod>2025-12-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -44,9 +44,10 @@
   <!-- Artikel Blog 2 -->
   <url>
     <loc>https://www.batiklaris.my.id/blog/artikel2.html</loc>
-    <lastmod>2025-12-06</lastmod>
+    <lastmod>2025-12-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
 </urlset>
+
