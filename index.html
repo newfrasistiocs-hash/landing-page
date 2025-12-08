@@ -12,7 +12,7 @@
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      background: #000;
+      background-color: #821710;
       color: #fff;
     }
 
@@ -77,13 +77,48 @@
       justify-content: center;
       align-items: center;
       margin-top: 150px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
     .banner-wrapper img {
       max-width: 80%;
       height: auto;
       display: block;
       border-radius: 8px;
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    /* Tombol aksi di bawah banner */
+    .action-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 50px;
+    }
+    .action-buttons a {
+      background-color: #000;
+      color: #0ff;
+      border: 2px solid #0ff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+      animation-delay: 0.5s; /* tombol muncul setelah banner */
+    }
+    .action-buttons a:hover {
+      background-color: #0ff;
+      color: #000;
+      box-shadow: 0 0 10px #0ff;
+    }
+
+    /* Animasi fade-in */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     /* Footer */
@@ -126,6 +161,14 @@
   <!-- Banner di tengah -->
   <div class="banner-wrapper">
     <img src="assets/banner-batik.png" alt="Banner BATIKJITU">
+  </div>
+
+  <!-- Tombol aksi di bawah banner -->
+  <div class="action-buttons">
+    <a href="https://batiklaris.space/daftar?ref_id=2d452d72">LINK DAFTAR BATIKJITU</a>
+    <a href="https://batiklaris.space/login">LINK LOGIN BATIKJITU</a>
+    <a href="https://batiklaris.space/promosi">LINK PROMOSI BATIKJITU</a>
+    <a href="https://batiklaris.space/livechat">LIVECHAT 24 JAM BATIKJITU</a>
   </div>
 
   <!-- Footer -->
