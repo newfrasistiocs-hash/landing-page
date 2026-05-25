@@ -1,9 +1,4 @@
 User-agent: *
 Allow: /
 
-# Disallow folder sensitif (jika ada)
-Disallow: /admin/
-Disallow: /private/
-
-# Lokasi sitemap
 Sitemap: https://www.batiklaris.my.id/sitemap.xml
